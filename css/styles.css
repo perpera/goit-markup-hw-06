@@ -384,6 +384,8 @@ img {
 }
 
 .check-text {
+  display: flex;
+  align-items: center;
   position: relative;
   font-size: 12px;
   line-height: 1.17;
@@ -394,11 +396,10 @@ img {
 .check-text-icon {
   width: 16px;
   height: 16px;
-  display: inline-flex;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
