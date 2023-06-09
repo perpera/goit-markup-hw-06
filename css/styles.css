@@ -485,6 +485,9 @@ img {
 
 .footer-form {
   margin-left: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 
 .footer-form-label {
@@ -492,7 +495,6 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  display: block;
   margin-bottom: 16px;
 }
 
