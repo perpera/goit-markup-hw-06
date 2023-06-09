@@ -250,6 +250,7 @@ img {
   width: 408px;
   min-height: 584px;
   position: absolute;
+  padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -297,11 +298,11 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark-title-color);
-  margin: 72px 24px 16px;
+  margin-bottom: 16px;
 }
 
 .modal-field {
-  margin: 0 24px 8px 24px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -314,6 +315,7 @@ img {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   padding-left: 38px;
   font-size: 14px;
   color: var(--dark-title-color);
@@ -350,14 +352,21 @@ img {
   letter-spacing: 0.04em;
 }
 
+.modal-comment-field {
+  margin-bottom: 16px;
+}
+
 .modal-comment {
   width: 100%;
-  height: 100px;
+  height: 120px;
   padding: 8px 16px;
-  margin-bottom: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   resize: none;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -370,6 +379,10 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-privacy {
+  margin-bottom: 24px;
+}
+
 .check-text {
   display: flex;
   align-items: center;
@@ -378,12 +391,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
-  margin-bottom: 24px;
 }
 
-.check-text span {
+.check-text-icon {
   width: 16px;
   height: 16px;
+  display: inline-flex;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
@@ -391,6 +404,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-link {
@@ -414,7 +428,7 @@ img {
   padding: 16px 32px;
   display: block;
   margin: 0 auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-weight: 500;
   line-height: 1.5;
@@ -624,14 +638,17 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: end;
+  gap: 24px;
 }
 
 .footer-form-label {
   color: var(--white-background-color);
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  margin-left: 80px;
 }
 
 .footer-form-input {
@@ -639,11 +656,14 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   width: 264px;
   height: 40px;
-  margin-right: 24px;
   padding-left: 16px;
   color: var(--white-background-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footer-form-input::placeholder {
   color: var(--white-background-color);
@@ -658,22 +678,26 @@ img {
 .footer-form-btn {
   background-color: var(--accent-color);
   color: var(--white-background-color);
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   border: none;
   letter-spacing: 0.04em;
-  gap: 16px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   border-radius: 4px;
 }
 .footer-form-btn:hover,
 .footer-form-btn:focus {
   background-color: var(--pressed-state-color);
+}
+
+.sub-icon {
+  margin-left: 16px;
 }
 /**------------------- PORTFOLIO buttons -----------------*/
 .portfolio {
